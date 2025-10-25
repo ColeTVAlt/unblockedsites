@@ -1,100 +1,48 @@
-:root {
-  --bg: #0f172a;
-  --card: #1e293b;
-  --accent: #3b82f6;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-header {
-  text-align: center;
-  padding: 1.5rem 0 2rem;
-  background: var(--card);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: var(--accent);
-}
-
-header p {
-  margin: 0.5rem 0 1.2rem;
-  color: var(--muted);
-}
-
-#searchBar {
-  padding: 0.8rem 1rem;
-  width: 60%;
-  max-width: 400px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  background: #334155;
-  color: var(--text);
-  font-size: 1rem;
-}
-
-main {
-  flex: 1;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.game {
-  background: var(--card);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.game:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.game iframe {
+/* ✅ Game cards with thumbnails */
+.game img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ Fullscreen modal overlay */
+#gameModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+#gameModal iframe {
+  width: 90%;
+  height: 80%;
   border: none;
-  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.game .info {
-  padding: 1rem;
-  text-align: center;
-}
-
-.game h2 {
-  margin: 0;
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: var(--accent);
+  border: none;
+  color: white;
   font-size: 1.2rem;
-  color: var(--accent);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: var(--card);
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  #searchBar {
-    width: 80%;
-  }
+#closeBtn:hover {
+  background: #2563eb;
 }
