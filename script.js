@@ -8,18 +8,16 @@ function filterGames() {
   });
 }
 
-// ✅ Open fullscreen modal
 function openGame(url) {
   const modal = document.getElementById("gameModal");
   const frame = document.getElementById("gameFrame");
   frame.src = url;
-  modal.style.display = "flex";
+  modal.classList.add("show");
 }
 
-// ✅ Close modal
 function closeGame() {
   const modal = document.getElementById("gameModal");
   const frame = document.getElementById("gameFrame");
-  frame.src = ""; // Stop the game
-  modal.style.display = "none";
+  frame.src = "";
+  modal.classList.remove("show");
 }
