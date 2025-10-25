@@ -1,61 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unblocked Games Hub</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Unblocked Games</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 🌐 Futuristic Navbar -->
-  <nav class="navbar">
-    <div class="logo">🕹️ <span>Unblocked Games Hub</span></div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#gamesContainer">Games</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav>
+    <h1>Unblocked Games Hub</h1>
   </nav>
 
-  <!-- 🔍 Search + Header -->
-  <header>
-    <h1>Discover & Play Anywhere</h1>
-    <p>30+ Unblocked Games — Smooth. Fast. Free.</p>
-    <input
-      type="text"
-      id="searchBar"
-      placeholder="Search for a game..."
-      onkeyup="filterGames()"
-    />
-  </header>
-
-  <!-- 🎮 Games Grid -->
+  <!-- Main game grid -->
   <main id="gamesContainer">
-    <div class="game" onclick="openGame('https://example.com')">
-      <img src="https://via.placeholder.com/400x250?text=Game+1" alt="Game 1" />
-      <div class="overlay">
-        <h2>Game 1</h2>
-      </div>
+    <!-- 30 game cards -->
+    <div class="game" onclick="openInlineGame('game1')">
+      <img src="https://via.placeholder.com/400x250?text=Aquapark.io" alt="Game 1">
+      <div class="overlay"><h2>Aquapark.io</h2></div>
     </div>
 
-    <div class="game" onclick="openGame('https://yourgameurl.com')">
-      <img src="https://via.placeholder.com/400x250?text=Game+2" alt="Game 2" />
-      <div class="overlay">
-        <h2>Game 2</h2>
-      </div>
+    <!-- Placeholder cards for games 2-30 -->
+    <div class="game" onclick="openInlineGame('game2')">
+      <img src="https://via.placeholder.com/400x250?text=Game+2" alt="Game 2">
+      <div class="overlay"><h2>Game 2</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game3')">
+      <img src="https://via.placeholder.com/400x250?text=Game+3" alt="Game 3">
+      <div class="overlay"><h2>Game 3</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game4')">
+      <img src="https://via.placeholder.com/400x250?text=Game+4" alt="Game 4">
+      <div class="overlay"><h2>Game 4</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game5')">
+      <img src="https://via.placeholder.com/400x250?text=Game+5" alt="Game 5">
+      <div class="overlay"><h2>Game 5</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game6')">
+      <img src="https://via.placeholder.com/400x250?text=Game+6" alt="Game 6">
+      <div class="overlay"><h2>Game 6</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game7')">
+      <img src="https://via.placeholder.com/400x250?text=Game+7" alt="Game 7">
+      <div class="overlay"><h2>Game 7</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game8')">
+      <img src="https://via.placeholder.com/400x250?text=Game+8" alt="Game 8">
+      <div class="overlay"><h2>Game 8</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game9')">
+      <img src="https://via.placeholder.com/400x250?text=Game+9" alt="Game 9">
+      <div class="overlay"><h2>Game 9</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game10')">
+      <img src="https://via.placeholder.com/400x250?text=Game+10" alt="Game 10">
+      <div class="overlay"><h2>Game 10</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game11')">
+      <img src="https://via.placeholder.com/400x250?text=Game+11" alt="Game 11">
+      <div class="overlay"><h2>Game 11</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game12')">
+      <img src="https://via.placeholder.com/400x250?text=Game+12" alt="Game 12">
+      <div class="overlay"><h2>Game 12</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game13')">
+      <img src="https://via.placeholder.com/400x250?text=Game+13" alt="Game 13">
+      <div class="overlay"><h2>Game 13</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game14')">
+      <img src="https://via.placeholder.com/400x250?text=Game+14" alt="Game 14">
+      <div class="overlay"><h2>Game 14</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game15')">
+      <img src="https://via.placeholder.com/400x250?text=Game+15" alt="Game 15">
+      <div class="overlay"><h2>Game 15</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game16')">
+      <img src="https://via.placeholder.com/400x250?text=Game+16" alt="Game 16">
+      <div class="overlay"><h2>Game 16</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game17')">
+      <img src="https://via.placeholder.com/400x250?text=Game+17" alt="Game 17">
+      <div class="overlay"><h2>Game 17</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game18')">
+      <img src="https://via.placeholder.com/400x250?text=Game+18" alt="Game 18">
+      <div class="overlay"><h2>Game 18</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game19')">
+      <img src="https://via.placeholder.com/400x250?text=Game+19" alt="Game 19">
+      <div class="overlay"><h2>Game 19</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game20')">
+      <img src="https://via.placeholder.com/400x250?text=Game+20" alt="Game 20">
+      <div class="overlay"><h2>Game 20</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game21')">
+      <img src="https://via.placeholder.com/400x250?text=Game+21" alt="Game 21">
+      <div class="overlay"><h2>Game 21</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game22')">
+      <img src="https://via.placeholder.com/400x250?text=Game+22" alt="Game 22">
+      <div class="overlay"><h2>Game 22</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game23')">
+      <img src="https://via.placeholder.com/400x250?text=Game+23" alt="Game 23">
+      <div class="overlay"><h2>Game 23</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game24')">
+      <img src="https://via.placeholder.com/400x250?text=Game+24" alt="Game 24">
+      <div class="overlay"><h2>Game 24</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game25')">
+      <img src="https://via.placeholder.com/400x250?text=Game+25" alt="Game 25">
+      <div class="overlay"><h2>Game 25</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game26')">
+      <img src="https://via.placeholder.com/400x250?text=Game+26" alt="Game 26">
+      <div class="overlay"><h2>Game 26</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game27')">
+      <img src="https://via.placeholder.com/400x250?text=Game+27" alt="Game 27">
+      <div class="overlay"><h2>Game 27</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game28')">
+      <img src="https://via.placeholder.com/400x250?text=Game+28" alt="Game 28">
+      <div class="overlay"><h2>Game 28</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game29')">
+      <img src="https://via.placeholder.com/400x250?text=Game+29" alt="Game 29">
+      <div class="overlay"><h2>Game 29</h2></div>
+    </div>
+    <div class="game" onclick="openInlineGame('game30')">
+      <img src="https://via.placeholder.com/400x250?text=Game+30" alt="Game 30">
+      <div class="overlay"><h2>Game 30</h2></div>
     </div>
   </main>
 
-  <!-- 🖥️ Fullscreen Modal -->
+  <!-- Fullscreen modal -->
   <div id="gameModal">
-    <button id="closeBtn" onclick="closeGame()">✕</button>
-    <iframe id="gameFrame" src="" allowfullscreen></iframe>
+    <button class="close-btn" onclick="closeGame()">✖</button>
+    <iframe id="gameFrame" frameborder="0"></iframe>
   </div>
 
-  <footer>
-    <p>© 2025 Unblocked Games Hub. All rights reserved.</p>
-  </footer>
+  <!-- Hidden embed slots -->
+  <div id="embedSlots" style="display:none;">
+    <!-- Game 1: Aquapark.io -->
+    <div id="game1">
+      <iframe style="width:100%; height:100%; border:none;" srcdoc='
+        <!DOCTYPE html>
+        <html lang="en-us">
+        <head>
+          <meta charset="utf-8">
+          <base href="https://cdn.jsdelivr.net/gh/genizy/braybray/aquapark-io/">
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+          <title>Aquapark IO Unblocked</title>
+          <link rel="stylesheet" href="TemplateData/css/style.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <script src="Build/UnityLoader.js"></script>
+          <script src="TemplateData/load.js"></script>
+        </head>
+        <body>
+          <div class="keepRatio">
+            <div class="webgl-content">
+              <button class="icon-resize-full" id="fullScreenButton" onclick="ToggleFullScreen()"></button>
+              <div id="gameContainer"></div>
+            </div>
+            <div id="loadingBlock">
+              <h1 class="subtitle">Aquapark.io</h1>
+              <div id="progressBar">
+                <div style="margin-bottom:5px">Loading ...</div>
+                <div class="centered emptyBarbg">
+                  <div id="emptyBar"></div>
+                  <div id="fullBar"></div>
+                </div>
+              </div>
+              <div class="cover" style="background-image: url(Aquaparkio512.jpg)"></div>
+            </div>
+          </div>
+          <script>
+            (function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="patch/js/gm-sdk-preload.js?v="+Date.now(),d.parentNode.insertBefore(a,d))})(document,"script","gamemonetize-preload-api");
+          </script>
+          <script src="js/analytics_ubg_v1_4.js"></script>
+          <script src="js/ubg235_client_v1_1.js"></script>
+        </body>
+        </html>
+      '></iframe>
+    </div>
+
+    <!-- Placeholder slots for games 2-30 -->
+    <div id="game2"><!-- Paste embed code for Game 2 here --></div>
+    <div id="game3"><!-- Paste embed code for Game 3 here --></div>
+    <div id="game4"><!-- Paste embed code for Game 4 here --></div>
+    <div id="game5"><!-- Paste embed code for Game 5 here --></div>
+    <div id="game6"><!-- Paste embed code for Game 6 here --></div>
+    <div id="game7"><!-- Paste embed code for Game 7 here --></div>
+    <div id="game8"><!-- Paste embed code for Game 8 here --></div>
+    <div id="game9"><!-- Paste embed code for Game 9 here --></div>
+    <div id="game10"><!-- Paste embed code for Game 10 here --></div>
+    <div id="game11"><!-- Paste embed code for Game 11 here --></div>
+    <div id="game12"><!-- Paste embed code for Game 12 here --></div>
+    <div id="game13"><!-- Paste embed code for Game 13 here --></div>
+    <div id="game14"><!-- Paste embed code for Game 14 here --></div>
+    <div id="game15"><!-- Paste embed code for Game 15 here --></div>
+    <div id="game16"><!-- Paste embed code for Game 16 here --></div>
+    <div id="game17"><!-- Paste embed code for Game 17 here --></div>
+    <div id="game18"><!-- Paste embed code for Game 18 here --></div>
+    <div id="game19"><!-- Paste embed code for Game 19 here --></div>
+    <div id="game20"><!-- Paste embed code for Game 20 here --></div>
+    <div id="game21"><!-- Paste embed code for Game 21 here --></div>
+    <div id="game22"><!-- Paste embed code for Game 22 here --></div>
+    <div id="game23"><!-- Paste embed code for Game 23 here --></div>
+    <div id="game24"><!-- Paste embed code for Game 24 here --></div>
+    <div id="game25"><!-- Paste embed code for Game 25 here --></div>
+    <div id="game26"><!-- Paste embed code for Game 26 here --></div>
+    <div id="game27"><!-- Paste embed code for Game 27 here --></div>
+    <div id="game28"><!-- Paste embed code for Game 28 here --></div>
+    <div id="game29"><!-- Paste embed code for Game 29 here --></div>
+    <div id="game30"><!-- Paste embed code for Game 30 here --></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
