@@ -7,9 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🌐 Futuristic Navbar -->
+  <nav class="navbar">
+    <div class="logo">🕹️ <span>Unblocked Games Hub</span></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#gamesContainer">Games</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔍 Search + Header -->
   <header>
-    <h1>Unblocked Games Hub</h1>
-    <p>Play freely, anytime, anywhere 🎮</p>
+    <h1>Discover & Play Anywhere</h1>
+    <p>30+ Unblocked Games — Smooth. Fast. Free.</p>
     <input
       type="text"
       id="searchBar"
@@ -18,24 +30,24 @@
     />
   </header>
 
+  <!-- 🎮 Games Grid -->
   <main id="gamesContainer">
-    <!-- ✅ Each game card -->
     <div class="game" onclick="openGame('https://example.com')">
-      <img src="https://via.placeholder.com/400x200?text=Game+1" alt="Game 1 Thumbnail">
-      <div class="info">
+      <img src="https://via.placeholder.com/400x250?text=Game+1" alt="Game 1" />
+      <div class="overlay">
         <h2>Game 1</h2>
       </div>
     </div>
 
     <div class="game" onclick="openGame('https://yourgameurl.com')">
-      <img src="https://via.placeholder.com/400x200?text=Game+2" alt="Game 2 Thumbnail">
-      <div class="info">
+      <img src="https://via.placeholder.com/400x250?text=Game+2" alt="Game 2" />
+      <div class="overlay">
         <h2>Game 2</h2>
       </div>
     </div>
   </main>
 
-  <!-- ✅ Fullscreen overlay modal -->
+  <!-- 🖥️ Fullscreen Modal -->
   <div id="gameModal">
     <button id="closeBtn" onclick="closeGame()">✕</button>
     <iframe id="gameFrame" src="" allowfullscreen></iframe>
