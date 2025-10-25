@@ -19,22 +19,27 @@
   </header>
 
   <main id="gamesContainer">
-    <!-- Example slot — copy this block and change the iframe src/title -->
-    <div class="game">
-      <iframe src="https://example.com" title="Game 1"></iframe>
+    <!-- ✅ Each game card -->
+    <div class="game" onclick="openGame('https://example.com')">
+      <img src="https://via.placeholder.com/400x200?text=Game+1" alt="Game 1 Thumbnail">
       <div class="info">
         <h2>Game 1</h2>
       </div>
     </div>
 
-    <!-- Add 29 more game blocks below -->
-    <div class="game">
-      <iframe src="https://yourgameurl.com" title="Game 2"></iframe>
+    <div class="game" onclick="openGame('https://yourgameurl.com')">
+      <img src="https://via.placeholder.com/400x200?text=Game+2" alt="Game 2 Thumbnail">
       <div class="info">
         <h2>Game 2</h2>
       </div>
     </div>
   </main>
+
+  <!-- ✅ Fullscreen overlay modal -->
+  <div id="gameModal">
+    <button id="closeBtn" onclick="closeGame()">✕</button>
+    <iframe id="gameFrame" src="" allowfullscreen></iframe>
+  </div>
 
   <footer>
     <p>© 2025 Unblocked Games Hub. All rights reserved.</p>
